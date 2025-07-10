@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Blog | Tags Semânticas no HTML</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #3A86FF;
+        }
+
+        body {
+           font-family: 'Poppins', sans-serif;
+           margin: 0;
+           padding: 0; 
+           background-color: #f5f7fa;
+}
+
+h2, h3, p, a{
+
+    margin-left: 15px;
+    
+    
+}
+
+a{
+
+color: #0077cc;
+text-decoration: none;
+ font-weight: bold;
+
+}
+
+a:hover {
+
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+video, iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1> Desvendando as tags semânticas do HTML🔍</h1>
+    <hr>
+    <h2 id="indice">Índice</h2>
+
+    <nav>
+
+        <ul>
+            <li><a href="#embed">A tag &lt;embed&gt; e o passado da web</a></li>
+            <li><a href="#strong-u">Por que  &lt;strong&gt; e  &lt;u&gt; vão além da aparência?</a></li>
+            <li><a href="#iframe">Quando e como usar &lt;iframe&gt; com segurança</a></li>
+            <li><a href="#curiosidade">Curiosidade</a></li>
+
+        </ul>
+    
+    </nav>
+   </header>
+
+    <main>
+    <h2 id="embed">A tag &lt;embed&gt; e o passado da web</h2>
+    <p>Nos primórdios da web, a tag &lt;embed&gt; foi amplamente utilizada para incorporar conteúdos externos às páginas HTML, como vídeos, animações em Flash, documentos PDF, entre outros. Seu principal papel era exibir esses elementos diretamente no navegador, sem a necessidade de plugins adicionais.
+
+Entretanto, a tag &lt;embed&gt; não possui valor semântico — ou seja, ela não transmite ao navegador, aos mecanismos de busca ou às tecnologias assistivas o significado do conteúdo que está sendo apresentado. Com a evolução do HTML e o surgimento do HTML5, novas tags mais descritivas e semânticas, como &lt;video&gt; e &lt;audio&gt;, passaram a ser recomendadas, promovendo uma web mais acessível, estruturada e significativa. 
+
+<br>
+
+<a href="#indice">Voltar ao índice ↑</a>
+
+
+</p>
+
+<h2 id="strong-u">Por que  &lt;strong&gt; e  &lt;u&gt; vão além da aparência?</h2>
+
+<p>Com a evolução do HTML, muitas tags deixaram de ser apenas elementos de estilo para assumir um papel mais significativo na estrutura do conteúdo. As tags &lt;strong&gt; e &lt;u&gt; são exemplos disso.
+
+A tag &lt;strong&gt; é utilizada para indicar que uma parte do conteúdo tem importância ou ênfase especial. Seu uso vai além de apenas deixar o texto em negrito — ela comunica aos leitores de tela e mecanismos de busca que aquele trecho merece atenção.
+
+Já a tag &lt;u&gt;, que antes servia apenas para sublinhar texto por estética, agora é usada para destacar palavras que precisam chamar a atenção visualmente, mas que não têm peso semântico — como erros ortográficos ou nomes estrangeiros.
+
+O uso correto dessas tags contribui para uma web mais acessível e compreensível, tanto para usuários quanto para tecnologias assistivas. 
+
+<br>
+
+<a href="#indice">Voltar ao índice ↑</a>
+
+
+</p>
+
+<h2 id="iframe">Quando e como usar &lt;iframe&gt; com segurança</h2>
+
+<p>A tag &lt;iframe&gt; é utilizada para incorporar conteúdos externos em uma página, como vídeos, mapas ou documentos hospedados em outros sites. Embora seja funcional e amplamente utilizada, seu uso exige cautela.
+
+Por não oferecer valor semântico ao conteúdo inserido, o &lt;iframe&gt; pode dificultar a navegação para usuários que utilizam leitores de tela, especialmente se não for acompanhado de um atributo title descritivo. Além disso, seu uso incorreto pode comprometer a segurança da aplicação, tornando-a vulnerável a ataques como <em>clickjacking</em>.
+
+Para garantir uma aplicação acessível e segura, recomenda-se utilizar o atributo title para descrever o conteúdo incorporado, e o atributo sandbox para restringir ações dentro do &lt;iframe&gt;. Assim, é possível manter a funcionalidade do recurso sem abrir mão da acessibilidade e das boas práticas. 
+<br>
+
+<a href="#indice">Voltar ao índice ↑</a>
+
+</p>
+
+<h3 id="curiosidade">Curiosidade</h3>
+
+<p>A preocupação com a estrutura e o significado do conteúdo na web não é recente. O próprio criador da World Wide Web, <strong>Tim Berners-Lee</strong>, defende desde os primeiros anos a importância de uma internet acessível, padronizada e compreensível por humanos e máquinas.
+
+Foi com esse objetivo que nasceu o W3C (World Wide Web Consortium), fundado por ele em 1994. A organização é responsável por definir os padrões da web — incluindo as recomendações para o uso de tags semânticas no HTML.
+
+Segundo o próprio site do W3C:
+
+<p>Confira este vídeo explicativo sobre a W3C:</p>
+
+<div class="video-container">
+<iframe width="560" height="315" title="Vídeo com Tim Berners-Lee explicando a história e a importância dos padrões da World Wide Web pela W3C" src="https://www.youtube.com/embed/b9iCiqgez6c?si=BXq3AT1Y8W7qx1MO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation" ></iframe>
+</div>
+
+<blockquote>
+  "A missão do W3C é levar a Web ao seu potencial máximo, garantindo que ela funcione para todas as pessoas, em qualquer lugar, com qualquer tecnologia."
+  <footer>
+    Fonte: <cite><a href="https://www.w3.org/mission/" target="_blank" rel="noopener noreferrer">W3C - Sobre a missão</a></cite>
+  </footer>
+</blockquote> <br>
+
+
+<a href="#indice">Voltar ao índice ↑</a> 
+
+</p>
+
+    </main>
+
+    
+</body>
+</html>
